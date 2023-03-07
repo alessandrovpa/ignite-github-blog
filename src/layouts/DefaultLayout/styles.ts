@@ -7,4 +7,5 @@ export const LayoutContent = styled.main`
   width: 100%;
   max-width: 1120px;
   margin-top: -4rem;
+  margin-bottom: 4rem;
 `;

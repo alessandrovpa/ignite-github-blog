@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+export const IssueContainer = styled.div``;
+
 export const ProfileContainer = styled.div`
   background: ${(props) => props.theme.backgroundProfile};
   border-radius: 8px;
@@ -35,8 +37,6 @@ export const UserInfo = styled.div`
   }
 `;
 
-export const Avatar = styled.img`
-  border-radius: 8px;
-  width: 9rem;
-  height: 9rem;
+export const ContentContainer = styled.main`
+  padding: 1rem;
 `;

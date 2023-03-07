@@ -24,4 +24,8 @@ export const GlobalStyle = createGlobalStyle`
     transition: 0.2s;
     cursor:pointer;
   }
+  a{
+    text-decoration: none;
+    color: ${(props) => props.theme.blue};
+  }
 `;

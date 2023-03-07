@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import { api } from '../../../../lib/axios';
 import { Avatar, ProfileContainer, UserInfo } from './styles';
+import CompanyIcon from '../../../../assets/company.svg';
+import FollowersIcon from '../../../../assets/followers.svg';
+import GithubIcon from '../../../../assets/github.svg';
 
 interface UserInfoProps {
   login: string;
@@ -48,9 +51,18 @@ export function Profile() {
           pulvinar vel mass.
         </p>
         <UserInfo>
-          <h3>{userInfo.login}</h3>
-          <h3>{userInfo.company || 'desempregado'}</h3>
-          <h3>{userInfo.followers} seguidores</h3>
+          <h3>
+            <img src={GithubIcon} alt="github logo" />
+            {userInfo.login}
+          </h3>
+          <h3>
+            <img src={CompanyIcon} alt="company icon" />
+            {userInfo.company || 'sem empresa'}
+          </h3>
+          <h3>
+            <img src={FollowersIcon} alt="followers icon" />
+            {userInfo.followers} seguidores
+          </h3>
         </UserInfo>
       </div>
     </ProfileContainer>
